@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* shared styles */
+  .description{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #828282;
+    margin: 0px;
+  }
+
+  .btn-primary{
+    background: linear-gradient(to right, #FBA24F, #FF1E1E);
+    padding: 23px 43px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 10px 10px 30px rgba(252, 143, 73, 0.5);
+    margin-top: 50px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.12rem;
+    
+
+  }
+  /* design eat-healtht related section */
+  .eat-healthy{
+    display: flex;
+  }
+  
+  .eat-healthy-first-column{
+    max-width: 600px;
+    padding: 250px 0px 80px 100px;
+  }
+  .eat-healthy-title{
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: #575757;
+    margin: 49px 0px;
+  }
+  .orange{
+    color: #FBA24F;
+  }
+
+  .eat-healthy-second-column{
+    max-width: 792px;
+    margin: -30px 50px 50px -40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .eat-healthy-second-column img{
+    width: 100%;
+  }
+
+
+  /* design about-me related section */
+  .about-me{
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../images/shapes/7.png");
+    margin: 100px 0px 70px 0px;
+  }
+  .about-me-first-column img{
+    width: 100%;
+    max-width: 340px;
+    margin: 64px 195px 0px 195px;
+
+  }
+
+.about-me-second-column{
+  max-width: 540px;
+  justify-content: center;
+  align-items: center;
+  margin: 126px 165px 70px 0px;
+  padding: 0px 48px;
+}
+.about-me-title{
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #707070;
+}
+
+
+
+  /* media quary small device */
+  @media screen and (max-width:576px) {
+    .eat-healthy, 
+    .about-me{
+      flex-direction: column;
+    }
+    .eat-healthy-first-column{
+      padding: 20px;
+    }
+    .eat-healthy-second-column{
+      margin: 50px auto;
+    }
+    .about-me-first-column img, 
+    .about-me-second-column{
+      margin: 40px 20px;
+    }
+  } 
+
+  /* media  quary medium device */
+  @media screen and (min-width:576px) and (max-width: 992px) {
+    .eat-healthy,
+    .about-me{
+      flex-direction: column;
+    }
+    .eat-healthy-first-column{
+      padding: 20px;
+    }
+    .eat-healthy-second-column{
+      margin: 50px auto;
+    }
+    .about-me-first-column img, 
+    .about-me-second-column{
+      margin: 40px 20px;
+    }
+  }
